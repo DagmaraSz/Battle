@@ -10,6 +10,6 @@ RSpec.feature "players_names", :type => :feature do
     fill_in "Player1", :with => "Bob"
     fill_in "Player2", :with => "Steve"
     click_button "Start"
-    expect(page).to have_text("Players' names are Player1: Bob, Player2: Steve")
+    expect(page).to have_text("Bob vs. Steve")
   end
 end

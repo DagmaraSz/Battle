@@ -1,6 +1,14 @@
-<html>
-  <h1>Players' names are Player1: <%= $Player1.name %>, Player2: <%= $Player2.name %></h1>
-  <p><%= $Player2.name %>'s hit points are : 23</p>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <div class="row">
+  <div class="col-sm-5">
+    <h1><%= $Player1.name %></h1>
+    <img src="http://cdn.quotesgram.com/small/58/77/37016418-hillary-clinton-funny.jpg">
+  </div>
+  <div class="col-sm-2"><h1>vs.</h1></div>
+  <div class="col-sm-5">
+    <h1><%= $Player2.name %></h1>
+    <img src="http://www.fullredneck.com/wp-content/uploads/2016/03/Funny-Donald-Trump-Jokes.jpg">
+  </div>
+  <p><%= $Player2.name %>'s hit points are : <%= $Player2.hp %></p>
   <p id="attack"></p>
   <button><a href="/attack">Attack</a></button>
-</html>
